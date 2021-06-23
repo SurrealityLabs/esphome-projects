@@ -40,3 +40,23 @@ sensor:
       name: "Office Battery-Level"
     battery_voltage:
       name: "Office Battery-Voltage"
+  - platform: atc_mithermometer
+    mac_address: !secret bathroom_sensor_mac
+    temperature:
+      name: "Bathroom Temperature"
+    humidity:
+      name: "Bathroom Humidity"
+    battery_level:
+      name: "Bathroom Battery-Level"
+    battery_voltage:
+      name: "Bathroom Battery-Voltage"
+  - platform: atc_mithermometer
+    mac_address: !secret familyroom_sensor_mac
+    temperature:
+      name: "Family Room Temperature"
+    humidity:
+      name: "Family Room Humidity"
+    battery_level:
+      name: "Family Room Battery-Level"
+    battery_voltage:
+      name: "Family Room Battery-Voltage"
